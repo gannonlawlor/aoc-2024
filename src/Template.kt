@@ -11,7 +11,7 @@ fun main() {
 
     // Or read a large test input from the `src/Day01_test.txt` file:
     val testInput = readInput("Day0_test")
-    check(part2(testInput) == 31L)
+    check(part1(testInput) == 31L)
 
     // Read the input from the `src/Day01.txt` file.
     val input = readInput("Day0")

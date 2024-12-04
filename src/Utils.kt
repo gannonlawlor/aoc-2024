@@ -8,6 +8,12 @@ import kotlin.io.path.readText
  */
 fun readInput(name: String) = Path("src/input/$name.txt").readText().trim().lines()
 
+fun readGrid(input: List<String>): Array<Array<Char>> {
+    return input.map { line ->
+        line.map { char -> char }.toTypedArray()
+    }.toTypedArray()
+}
+
 /**
  * Converts string to md5 hash.
  */
